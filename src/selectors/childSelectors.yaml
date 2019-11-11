@@ -1,0 +1,8 @@
+---
+Child Selectors - Table: "#childSelectorTest"
+Child Selectors - Project A: ".projectA"
+Child Selectors - Project B: ".projectB"
+Child Selectors - User 1: ".testUser1"
+Child Selectors - User 2: ".testUser2"
+Child Selectors - Name Column: ".userName"
+Child Selectors - Role Column: ".roleName"

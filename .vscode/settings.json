@@ -1,0 +1,8 @@
+{
+    "cucumberautocomplete.steps": [
+        "node_modules/@jambit/wdio-cucumber-selected-steps/lib/steps/*.js",
+        "src/steps/*.ts"
+    ],
+    "cucumberautocomplete.syncfeatures": "src/features/*.feature",
+    "cucumberautocomplete.gherkinDefinitionPart": "(Given|When|Then|defineTypedStep)\\("
+}

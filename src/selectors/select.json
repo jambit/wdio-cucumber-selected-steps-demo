@@ -1,0 +1,8 @@
+{
+    "Select - Select": "#selectElementTest",
+    "Select - Select Alias": "//select[@id='selectElementTest']",
+    "Select - Option #1": "#selectElementTest option:nth-child(1)",
+    "Select - Option #2": "#selectElementTest option:nth-child(2)",
+    "Select - Option #3": "#selectElementTest option:nth-child(3)",
+    "Select - Option #4": "#selectElementTest option:nth-child(4)"
+}
