@@ -1,8 +1,9 @@
 require('@babel/register')({
-    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    extensions: ['.js', '.ts'],
     // This will override `node_modules` ignoring - you can alternatively pass
     // an array of strings to be explicitly matched or a regex / glob
     ignore: [
+        // Gherkin, however, is not compatible with babel, so ignore it.
         'node_modules/gherkin/**/*.js',
     ],
 });
