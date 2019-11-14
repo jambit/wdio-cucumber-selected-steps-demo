@@ -135,18 +135,11 @@ exports.config = {
     // see also: http://webdriver.io/guide/testrunner/reporters.html
     reporters: [
         'spec',
-        'junit',
-    ],
-    reporterOptions: {
-        junit: {
+        ['junit', {
             outputDir: './reports',
-            outputFileFormat: {
-                single() {
-                    return 'junit-report.xml';
-                },
-            },
-        },
-    },
+            outputFileFormat: () => 'junit-report.xml',
+        }]
+    ],
     //
     // If you are using Cucumber you need to specify the location of your step
     // definitions.
