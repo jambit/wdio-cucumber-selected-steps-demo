@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node --experimental-modules server.mjs",
+    "docs": "stepdoc",
     "test": "wdio wdio.conf.js",
     "test:ci": "wdio wdio.HEADLESS.conf.js"
   },
@@ -31,6 +32,7 @@
     "webdriverio": "^5.16.6"
   },
   "devDependencies": {
+    "@jambit/wdio-cucumber-selected-steps-stepdoc": "^0.8.5",
     "@types/cucumber": "^4.0.7",
     "@types/webdriverio": "^5.0.0"
   }
