@@ -32,7 +32,7 @@
     "webdriverio": "^5.18.6"
   },
   "devDependencies": {
-    "@jambit/wdio-cucumber-selected-steps-stepdoc": "^0.8.5",
+    "@jambit/wdio-cucumber-selected-steps-stepdoc": "^0.8.7",
     "@types/cucumber": "^4.0.7",
     "@types/webdriverio": "^5.0.0"
   }

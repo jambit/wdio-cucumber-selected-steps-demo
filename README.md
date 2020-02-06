@@ -25,7 +25,7 @@ All of these steps can be used with `Given`, `When`, `Then` and `And`.
 
 ## githubLogin
 
-- [`I log in on github as "([^"]+)" with password "([^"]+)"`](STEPS.md#githubLogin-step-0)\
+- [`I log in on github as "([^"]+)" with password "([^"]+)"`](STEPS.md#githubLogin-step-c114a1c5)\
 -> Log in to github
 
 # Documenting Custom Steps

@@ -10,7 +10,7 @@ All of these steps can be used with `Given`, `When`, `Then` and `And`.
 
 ## githubLogin
 
-### `I log in on github as "([^"]+)" with password "([^"]+)"`<a name="githubLogin-step-0"></a>
+### `I log in on github as "([^"]+)" with password "([^"]+)"`<a name="githubLogin-step-c114a1c5"></a>
 
 Log in to github
 
