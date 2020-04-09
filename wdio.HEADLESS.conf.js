@@ -2,7 +2,7 @@ const wdioConfig = require('./wdio.conf.js');
 
 Object.assign(wdioConfig.config, {
     capabilities: [{
-        maxInstances: 1,
+        maxInstances: 5,
         browserName: 'chrome',
         'goog:chromeOptions': {
             args: [

@@ -2,7 +2,7 @@
   "name": "@jambit/wdio-cucumber-selected-steps-demo",
   "version": "1.0.0",
   "scripts": {
-    "start": "node --experimental-modules server.mjs",
+    "start": "serve -l 3000 demo-app",
     "docs": "stepdoc",
     "test": "wdio wdio.conf.js",
     "test:ci": "wdio wdio.HEADLESS.conf.js"
@@ -14,26 +14,23 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-typescript": "^7.9.0",
     "@babel/register": "^7.9.0",
-    "@jambit/wdio-cucumber-selected-steps": "0.9.0",
-    "@wdio/cli": "^5.22.4",
-    "@wdio/config": "^5.22.4",
-    "@wdio/cucumber-framework": "^5.20.0",
-    "@wdio/junit-reporter": "^5.22.4",
-    "@wdio/local-runner": "^5.22.4",
-    "@wdio/spec-reporter": "^5.22.4",
-    "@wdio/sync": "^5.20.1",
-    "chai": "^4.2.0",
+    "@jambit/wdio-cucumber-selected-steps": "^1.0.2",
+    "@wdio/cli": "^6.0.14",
+    "@wdio/config": "^6.0.12",
+    "@wdio/cucumber-framework": "^6.0.14",
+    "@wdio/junit-reporter": "^6.0.14",
+    "@wdio/local-runner": "^6.0.14",
+    "@wdio/spec-reporter": "^6.0.14",
+    "@wdio/sync": "^6.0.14",
     "chromedriver": "^80.0.2",
-    "cucumber": "^5.1.0",
-    "finalhandler": "^1.1.2",
-    "serve-static": "^1.14.1",
+    "cucumber": "^6.0.5",
     "typescript": "^3.8.3",
-    "wdio-chromedriver-service": "^5.0.2",
-    "webdriverio": "^5.22.4"
+    "wdio-chromedriver-service": "^6.0.1",
+    "webdriverio": "^6.0.14"
   },
   "devDependencies": {
-    "@jambit/wdio-cucumber-selected-steps-stepdoc": "^0.8.7",
-    "@types/cucumber": "^4.0.7",
-    "@types/webdriverio": "^5.0.0"
+    "@jambit/wdio-cucumber-selected-steps-stepdoc": "^0.9.0",
+    "@types/cucumber": "^6.0.1",
+    "serve": "^11.3.0"
   }
 }
