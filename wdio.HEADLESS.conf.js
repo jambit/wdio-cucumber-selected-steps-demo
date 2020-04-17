@@ -16,7 +16,6 @@ Object.assign(wdioConfig.config, {
             ],
         },
     }],
-    services: ['chromedriver'],
 });
 
 exports.config = wdioConfig.config;

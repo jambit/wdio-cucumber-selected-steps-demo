@@ -14,10 +14,9 @@ Feature: Test if the url matches a certain value
         Given I open the path "/"
         Then  the path does not match "/index.html"
 
-    # npm package serve removes index.html from the url
-    Scenario: The path should remove /index.html
+    Scenario: The path should work for /index.html
         Given I open the path "/index.html"
-        Then  the path matches "/"
+        Then  the path matches "/index.html"
 
     Scenario: The path should allow /home
         Given I open the path "/home"

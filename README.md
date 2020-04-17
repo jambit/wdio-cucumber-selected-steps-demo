@@ -9,8 +9,8 @@ Official repository: https://github.com/jambit/wdio-cucumber-selected-steps-demo
 # How to Use
 
 * Download or clone this repository
-* Run `npm start` to run the demo-app server
-* Then (in another terminal) either run `npm test` to execute the tests in chrome
+* Run `npm ci` to install all dependencies
+* Then either run `npm test` to execute the tests in chrome
 * Or run `npm run test:ci` to execute the tests in headless chrome
 
 # List of Included Steps

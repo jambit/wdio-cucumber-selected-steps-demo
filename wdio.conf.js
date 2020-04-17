@@ -3,8 +3,9 @@ require('@babel/register')({
     // This will override `node_modules` ignoring - you can alternatively pass
     // an array of strings to be explicitly matched or a regex / glob
     ignore: [
-        // Gherkin, however, is not compatible with babel, so ignore it.
+        // The following, however, are not compatible with babel, so ignore them.
         'node_modules/gherkin/**/*.js',
+        'node_modules/@wdio/**/*.js',
     ],
 });
 
@@ -123,7 +124,15 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
+    services: [
+        ['chromedriver', {}],
+        ['static-server', {
+            port: 3000,
+            folders: [
+                { mount: '/', path: './demo-app' },
+            ],
+        }],
+    ],
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber

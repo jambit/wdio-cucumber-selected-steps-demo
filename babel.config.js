@@ -12,9 +12,6 @@ module.exports = function config(api) {
                 },
             ],
             '@babel/preset-typescript',
-        ],
-        "ignore": [
-            "node_modules/@wdio",
         ]
     };
 };
