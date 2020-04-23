@@ -13,7 +13,7 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-typescript": "^7.9.0",
     "@babel/register": "^7.9.0",
-    "@jambit/wdio-cucumber-selected-steps": "^1.0.3",
+    "@jambit/wdio-cucumber-selected-steps": "^1.0.4",
     "@wdio/cli": "^6.0.18",
     "@wdio/config": "^6.0.16",
     "@wdio/cucumber-framework": "^6.0.16",
