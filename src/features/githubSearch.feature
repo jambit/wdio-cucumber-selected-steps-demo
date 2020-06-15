@@ -18,4 +18,4 @@ Scenario: search for webdriverio repository
     When  I press "Enter"
     And   I wait for the element "Github - Header Search Input" to exist
     Then  the element "Github - Header Search Input" contains the text "webdriverio automation"
-    And   the element "Github - Repo List - First Child" contains the text "Next-gen WebDriver test automation framework for Node.js"
+    And   the element "Github - Repo List - First Child" contains the text "Next-gen browser and mobile automation test framework for Node.js"
