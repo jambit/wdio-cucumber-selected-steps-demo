@@ -21,3 +21,27 @@ Log in to github
     * The corresponding password
 * **Calls:**
   * `githubLogin()`
+
+## userTable
+
+### `I create a user "(User A|User B)"`<a name="userTable-step-c3346658"></a>
+
+Create a user
+
+* **ParamTypes:**
+  * `selector`
+    * The name of the user in userTable.yaml
+* **Calls:**
+  * `createUser()`
+
+### `I see the user "(User A|User B)" in "(User Table - User A|User Table - User B)"`<a name="userTable-step-b2d5bc13"></a>
+
+Validate a user row exists and has correct values in the columns
+
+* **ParamTypes:**
+  * `selector`
+    * The name of the user in userTable.yaml
+  * `string`
+    * The row name to match against
+* **Calls:**
+  * `validateUser()`

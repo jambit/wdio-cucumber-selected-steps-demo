@@ -28,6 +28,13 @@ All of these steps can be used with `Given`, `When`, `Then` and `And`.
 - [`I log in on github as "([^"]+)" with password "([^"]+)"`](STEPS.md#githubLogin-step-c114a1c5)\
 -> Log in to github
 
+## userTable
+
+- [`I create a user "(User A|User B)"`](STEPS.md#userTable-step-c3346658)\
+-> Create a user
+- [`I see the user "(User A|User B)" in "(User Table - User A|User Table - User B)"`](STEPS.md#userTable-step-b2d5bc13)\
+-> Validate a user row exists and has correct values in the columns
+
 # Documenting Custom Steps
 
 The documentation for the steps included in this project are automatically generated using the package `@jambit/wdio-cucumber-selected-steps-stepdoc`.
