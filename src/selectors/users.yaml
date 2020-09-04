@@ -1,0 +1,7 @@
+---
+User A:
+  username: "Johnny"
+  email: "johnny+{{TEST_ID}}@wdio.com"
+User B:
+  username: "Jessica"
+  email: "jessica+{{TEST_ID}}@wdio.com"

@@ -1,0 +1,8 @@
+---
+User Table - User Input: "#userName"
+User Table - E-Mail Input: "#email"
+User Table - Add User: "#addUser"
+User Table - User A: "#userTable tbody .johnny_{{TEST_ID}}_wdio_com"
+User Table - User B: "#userTable tbody .jessica_{{TEST_ID}}_wdio_com"
+User Table - Name Column: ".name-column"
+User Table - E-Mail Column: ".email-column"

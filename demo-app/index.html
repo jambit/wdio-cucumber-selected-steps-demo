@@ -21,11 +21,13 @@
             margin-left: 0;
             margin-right: 0;
         }
-        #childSelectorTest td {
+        #childSelectorTest td,
+        #userTable td {
             padding: 5px;
             border: 1px solid gray;
         }
-        #childSelectorTest thead td {
+        #childSelectorTest thead td,
+        #userTable thead td {
             font-weight: bold;
         }
         </style>
@@ -200,6 +202,23 @@
                     <tbody class="projectB">
                         <tr class="testUser1"><td class="userName">Test User1!</td><td class="roleName">Admin</td></tr>
                         <tr class="testUser2"><td class="userName">Test User2!</td><td class="roleName">Moderator</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr />
+
+            <div>
+                <table id="userTable">
+                    <thead>
+                        <tr><td>Name</td><td>E-Mail</td><td>Action</td></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input id="userName" placeholder="Enter a name.." /></td>
+                            <td><input id="email" placeholder="Enter an e-mail.." /></td>
+                            <td><button id="addUser">Add</button></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

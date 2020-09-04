@@ -10,7 +10,7 @@ require('@babel/register')({
 });
 
 const path = require('path');
-const setupSelectors = require('@jambit/wdio-cucumber-selected-steps').setupSelectors;
+const { setupSelectors, setSelectorVariable } = require('@jambit/wdio-cucumber-selected-steps');
 
 exports.config = {
     //
@@ -252,6 +252,7 @@ exports.config = {
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
     before: function (capabilities, specs) {
+        setSelectorVariable("TEST_ID", Date.now().toString());
         setupSelectors([
             './src/selectors/*.js',
             './src/selectors/*.json',

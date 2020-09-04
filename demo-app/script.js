@@ -205,6 +205,26 @@ function toggleMoveToElement(event) {
     $(this).toggleClass('moveToClass');
 }
 
+var INVALID_CLASSNAME_CHARACTERS = /[^a-z0-9-]/gi;
+function sanitizeClassName(input) {
+    return input.replace(INVALID_CLASSNAME_CHARACTERS, '_');
+}
+
+function onAddUser() {
+    var username = $('#userName').val();
+    var email = $('#email').val();
+    var className = sanitizeClassName(email);
+    var row = $('<tr class="' + className + '"></tr>');
+    row.append($('<td class="name-column"></td>').text(username));
+    row.append($('<td class="email-column"></td>').text(email));
+    row.append($('<td></td>'));
+
+    $('#userTable tbody').prepend(row);
+
+    $('#userName').val('');
+    $('#email').val('');
+}
+
 $(function () {
     $('.jsToggleElement')
         .on('click', onClickToggleElement);
@@ -242,4 +262,7 @@ $(function () {
 
     $('#moveTo')
         .on('mouseenter mouseleave', toggleMoveToElement);
+
+    $('#addUser')
+        .on('click', onAddUser);
 });
