@@ -6,7 +6,7 @@ Feature: Github test
 Scenario: open URL
     Given I open the url "https://github.com/"
     Then  the url contains "github.com"
-    And   the title matches the text "The world’s leading software development platform · GitHub"
+    And   the title matches the text "GitHub: Where the world builds software · GitHub"
 
 Scenario: search for webdriverio repository
     Given I open the url "https://github.com/search"
