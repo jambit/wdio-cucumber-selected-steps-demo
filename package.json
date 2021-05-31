@@ -13,7 +13,7 @@
     "@babel/preset-env": "^7.14.4",
     "@babel/preset-typescript": "^7.13.0",
     "@babel/register": "^7.13.16",
-    "@jambit/wdio-cucumber-selected-steps": "^2.3.0",
+    "@jambit/wdio-cucumber-selected-steps": "^2.3.1",
     "@wdio/cli": "^7.6.1",
     "@wdio/config": "^7.6.0",
     "@wdio/cucumber-framework": "^7.6.1",
@@ -28,6 +28,6 @@
     "webdriverio": "^7.6.1"
   },
   "devDependencies": {
-    "@jambit/wdio-cucumber-selected-steps-stepdoc": "^2.3.0"
+    "@jambit/wdio-cucumber-selected-steps-stepdoc": "^2.3.1"
   }
 }
